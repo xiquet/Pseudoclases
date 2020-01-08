@@ -1,4 +1,4 @@
-div {
+/* div {
     border: black 5px solid;
     margin: 10px;
     padding: 10px;
@@ -37,14 +37,14 @@ div {
     background-color: lightblue;
     color: red;
   } */
-  input:focus {
+  /* input:focus {
     border: red 2px dotted;
     padding: 2px;
-  }
+  } */
   /* p::first-line {
     text-transform: uppercase;
   } */
-  p::first-letter {
+  /* p::first-letter {
     color:darkblue;
   }
   p.cuidado::before {
@@ -54,4 +54,30 @@ div {
   }
   p.cuidado::after {
     content: " (escrito por mi).";
+  } */ 
+  /* pre {
+    counter-reset: cuenta-parrafos;
+  }
+  
+  p::before {
+    content: counter(cuenta-parrafos, katakana-iroha) ". ";
+    counter-increment: cuenta-parrafos 27;
+  } */
+  h1 {
+    counter-reset: cuenta-parrafos;
+    counter-reset: cuenta-apartados;
+  }
+  
+  h2 {
+    counter-reset: cuenta-parrafos;
+  }
+  
+  h2::before {
+    content: counter(cuenta-apartados, katakana-iroha)". ";
+    counter-increment: cuenta-apartados;
+  }
+  
+  p::before {
+    content: counter(cuenta-apartados, katakana-iroha)"-"counter(cuenta-parrafos)". ";
+    counter-increment: cuenta-parrafos;
   }
