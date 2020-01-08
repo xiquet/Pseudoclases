@@ -7,3 +7,6 @@ div {
   div p:first-child {
     color: red;
   }
+  div :first-child {
+    color:blue;
+  }
