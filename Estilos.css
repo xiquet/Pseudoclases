@@ -10,3 +10,48 @@ div {
   div :first-child {
     color:blue;
   }
+  a:link {
+    background-color: lightblue;
+   
+  }
+  
+  a:visited {
+    background-color: coral;
+    color: red;
+  }
+  p {
+    background-color: white;
+    color: black;
+  }
+  
+  a:hover {
+    background-color: black;
+    color: white;
+  }
+  p:active {
+    background-color: lightblue;
+    color: red;
+  }
+/* 
+  p:hover {
+    background-color: lightblue;
+    color: red;
+  } */
+  input:focus {
+    border: red 2px dotted;
+    padding: 2px;
+  }
+  /* p::first-line {
+    text-transform: uppercase;
+  } */
+  p::first-letter {
+    color:darkblue;
+  }
+  p.cuidado::before {
+    content: "Achtung: ";
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  p.cuidado::after {
+    content: " (escrito por mi).";
+  }
